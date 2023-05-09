@@ -1,18 +1,6 @@
 <script setup lang="ts">
 import { ref, reactive } from 'vue'
-import { loadStarsPreset } from 'tsparticles-preset-stars'
-import { FullScreen } from 'tsparticles-engine'
 
-const particlesInit = async (engine) => {
-  await loadStarsPreset(engine)
-}
-
-const particlesLoaded = async (container) => {
-  console.log('Particles container loaded', container)
-}
-const particlesOptions = {
-  preset: 'stars'
-}
 const message = ref('Portfolio Page')
 
 interface other {
@@ -57,10 +45,47 @@ const other_message: other = reactive({
 
     <div>
       <h1>PERSONAL PROJECTS</h1>
+      <div>
+        <h2>Phonebook Application</h2>
+        <ul>
+          <li>DUMMY TEXT</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Country Information Application</h2>
+        <ul>
+          <li>DUMMY TEXT</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Bloglist Application</h2>
+        <ul>
+          <li>DUMMY TEXT</li>
+        </ul>
+      </div>
     </div>
 
     <div>
       <h1>VALUES</h1>
+      <div>
+        <h2>WALKING UPWARDS</h2>
+        <p>Since perfection does not exist, I do my best to continously improve.</p>
+      </div>
+      <div>
+        <h2>ADAPTATION</h2>
+        <p>Better ways of doing things should be adpated to ensure progession</p>
+      </div>
+      <div>
+        <h2>CRAWL FALL, WALK</h2>
+        <p>
+          As Kids we crawl, stand up, fall, and at some point walk. That's the approach I take when
+          I'm learning something new.
+        </p>
+      </div>
+      <div>
+        <h2>ACE</h2>
+        <p>No matter what the project is - we should always try to get it right.</p>
+      </div>
     </div>
   </div>
 </template>
