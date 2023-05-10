@@ -47,21 +47,33 @@ const other_message: other = reactive({
       <h1>PERSONAL PROJECTS</h1>
       <div>
         <h2>Phonebook Application</h2>
-        <ul>
-          <li>DUMMY TEXT</li>
-        </ul>
+        <p>
+          A simple application that functions a phonebook list, to you may remember your phone
+          number
+        </p>
+        <p>Node.js, React, MongoDB</p>
       </div>
       <div>
         <h2>Country Information Application</h2>
-        <ul>
-          <li>DUMMY TEXT</li>
-        </ul>
+        <p>
+          A application to find information about your a country + including the weather of the
+          capital city
+        </p>
+        <!-- TODO:use chatgpt to summarize the history of the country -->
+        <p>Restful API, React, Node</p>
       </div>
       <div>
         <h2>Bloglist Application</h2>
-        <ul>
-          <li>DUMMY TEXT</li>
-        </ul>
+        <p>
+          A application to store you favorite blogs posts where other users can like and comment on
+          the blog post
+        </p>
+        <p>React, Node.js, Redux</p>
+      </div>
+      <div>
+        <h2>Patient Diagnosis Application</h2>
+        <p>Store your patient records in this application including the type of Diagnosis</p>
+        <p>React, Typescript, Material UI</p>
       </div>
     </div>
 
