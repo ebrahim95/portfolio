@@ -12,11 +12,8 @@ const other_message: other = reactive({
 </script>
 
 <template>
-  <!-- <div>
-    <Particles id="tsparticles" :particlesInit="particlesInit" :options="particlesOptions" />
-  </div>-->
-  <div>
-    <h1>Ebrahim's Portfolio</h1>
+  <div class="font-mono flex justify-center items-center flex-col gap-2 min-h-full">
+    <h1 class="font-si">Ebrahim's Portfolio</h1>
     <div>
       <h2>HOW I STARTED</h2>
       <p>
@@ -101,9 +98,5 @@ const other_message: other = reactive({
     </div>
   </div>
 </template>
-<!-- TODO: need to add about about -->
 
-<!-- TODO: need to add projects  -->
-
-<!-- TODO: need to fix particles js  -->
 <style scoped></style>
