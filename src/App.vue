@@ -74,8 +74,9 @@ const other_message: other = reactive({
 
           <Card url_git="https://github.com/ebrahim95/portfolio" url_demo="https://coding-school-list.fly.dev">
             <template #heading>Coding School List</template>
-            <template #details>The website has coding schools listed in the greater Houston Area.</template>
-            <template #stack>Solid JS, Typescript, Vite, Tailwind CSS, Pocketbase Database, Tanstack Table</template>
+            <template #details>The website displays coding schools that are located within the Greater Houston
+              Area.</template>
+            <template #stack>Solid JS, Typescript, Tailwind CSS, Pocketbase Database, Tanstack Table</template>
           </Card>
 
           <Card url_git="https://github.com/ebrahim95/coding_school_list" url_demo="https://small-hill-6640.fly.dev/">
@@ -138,6 +139,8 @@ const other_message: other = reactive({
         <a class="link" href="https://www.linkedin.com/in/ebrahim-haji/">LinkedIn</a>
         <span> | </span>
         <a class="link" href="https://github.com/ebrahim95">Github</a>
+        <span> | </span>
+        <a class="link" href="https://twitter.com/ebstheace">Twitter</a>
       </footer>
     </div>
   </div>
