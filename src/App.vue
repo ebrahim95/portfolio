@@ -9,11 +9,13 @@ interface other {
 const other_message: other = reactive({
   name: 'ebrahim'
 })
+
+
 </script>
 
 <template>
   <div id="main-background" class="prose font-mono mx-auto min-h-full p-10 min-w-full">
-    <div class="mx-auto 2xl:w-6/12 lg:w-8/12 flex flex-col items-center">
+    <div class="mx-auto 2xl:w-8/12 lg:w-8/12 flex flex-col items-center">
       <header>
         <h1 class="text-center">Ebrahim's <span class="kbd"> + </span> Portfolio</h1>
         <h2 class="text-center"> A Crafty Front <span class="kbd">-</span> End Engineer </h2>
@@ -49,17 +51,7 @@ const other_message: other = reactive({
       </section>
       <section class="mb-6">
         <h2 class="kbd text-center lg:text-start">PERSONAL PROJECTS</h2>
-        <div class="flex flex-row flex-wrap justify-center gap-6 mx-auto 2xl:justify-start">
-          <Card url_git="https://github.com/ebrahim95/practice-projects/tree/main/phonebook"
-            url_demo="https://small-hill-6640.fly.dev/">
-            <template #heading> Phonebook Application </template>
-            <template #details>
-              A simple application that functions a phonebook list, to you may remember your phone
-              number
-            </template>
-            <template #stack>Node.js, React, MongoDB</template>
-          </Card>
-
+        <div class="min-w-full flex flex-row flex-wrap justify-center gap-5 mx-auto 2xl:justify-start">
           <Card url_git="https://github.com/ebrahim95/practice-projects/tree/main/countries"
             url_demo="https://silent-dream-6984.fly.dev/">
             <template #heading> Country Information Application </template>
@@ -80,6 +72,22 @@ const other_message: other = reactive({
             <template #stack> React, Node.js, Redux </template>
           </Card>
 
+          <Card url_git="https://github.com/ebrahim95/portfolio" url_demo="https://coding-school-list.fly.dev">
+            <template #heading>Coding School List</template>
+            <template #details>The website has coding schools listed in the greater Houston Area.</template>
+            <template #stack>Solid JS, Typescript, Vite, Tailwind CSS, Pocketbase Database, Tanstack Table</template>
+          </Card>
+
+          <Card url_git="https://github.com/ebrahim95/coding_school_list" url_demo="https://small-hill-6640.fly.dev/">
+            <template #heading> Phonebook Application </template>
+            <template #details>
+              A simple application that functions a phonebook list, to you may remember your phone
+              number
+            </template>
+            <template #stack>Node.js, React, MongoDB</template>
+          </Card>
+
+
           <Card url_git="https://github.com/ebrahim95/practice-projects/tree/main/patientor">
             <template #heading> Patient Diagnosis Application </template>
             <template #details>
@@ -88,13 +96,13 @@ const other_message: other = reactive({
             <template #stack> React, Typescript, Material UI </template>
           </Card>
 
-
-
           <Card url_git="https://github.com/ebrahim95/portfolio">
             <template #heading>Portfolio</template>
             <template #details>Shows you my work :)</template>
             <template #stack>Vue, Typescript, Vite</template>
           </Card>
+
+
 
 
         </div>
