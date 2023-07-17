@@ -17,41 +17,31 @@ const other_message: other = reactive({
   <div id="main-background" class="prose font-mono mx-auto min-h-full p-10 min-w-full">
     <div class="mx-auto 2xl:w-8/12 lg:w-8/12 flex flex-col items-center">
       <header>
-        <h1 class="text-center">Ebrahim's <span class="kbd"> + </span> Portfolio</h1>
-        <h2 class="text-center"> A Crafty Front <span class="kbd">-</span> End Engineer </h2>
+        <h1 class="text-center">Ebrahim's Portfolio</h1>
+        <h2 class="text-center"> A Crafty Full <span class="kbd kbd-sm">-</span> Stack Engineer </h2>
 
       </header>
-      <section>
-        <h3 class="kbd font-bold">
-          HOW I STARTED
-        </h3>
-        <p>
-          I started web development in May 2022 by volunteering at an organization to develop a new
-          website. At first, I knew little about creating a website. I used a landing page software
-          called Carrd to develop the website. It was quite a simple software and creating a web
-          page was not too difficult.
-        </p>
-
-        <h3 class="kbd  font-bold">
-          PROGESSION
-        </h3>
-        <p>
-          I started to look deeper into web development and stumbled upon Webflow. I looked into and
-          started learning it through Webflow university. After developing a basic skillset, I
-          started to develop free websites for individuals in my discord community.
-        </p>
-        <h3 class="kbd  font-bold">
-          CURRENTLY,
-        </h3>
-
-        <p>
-          I am well-versed in the MERN Stack - MongoDB, Express.js, React.js, and Node.js. I can
-          also use Typescript. I aim to be a Front-End Developer with Full-Stack Awareness.
-        </p>
-      </section>
       <section class="mb-6">
         <h2 class="kbd text-center lg:text-start">PERSONAL PROJECTS</h2>
         <div class="min-w-full flex flex-row flex-wrap justify-center gap-5 mx-auto 2xl:justify-start">
+
+          <Card url_git="https://github.com/ebrahim95/coding_school_list" url_demo="https://coding-school-list.fly.dev">
+            <template #heading>Coding School List</template>
+            <template #details>The website displays coding schools that are located within the Greater Houston
+              Area.</template>
+            <template #stack>Solid JS, Typescript, Tailwind CSS, Pocketbase Database, Tanstack Table</template>
+          </Card>
+
+
+          <Card url_git="https://github.com/ebrahim95/tailwindcss_generator"
+            url_demo="https://ebrahim95.github.io/tailwindcss_generator">
+            <template #heading>Tailwind CSS Generator</template>
+            <template #details>A Tailwind CSS component generator that helps you prototype quickly.</template>
+            <template #stack>Svelte, Typescript, Tailwind CSS</template>
+          </Card>
+
+
+
           <Card url_git="https://github.com/ebrahim95/practice-projects/tree/main/countries"
             url_demo="https://silent-dream-6984.fly.dev/">
             <template #heading> Country Information Application </template>
@@ -72,14 +62,7 @@ const other_message: other = reactive({
             <template #stack> React, Node.js, Redux </template>
           </Card>
 
-          <Card url_git="https://github.com/ebrahim95/portfolio" url_demo="https://coding-school-list.fly.dev">
-            <template #heading>Coding School List</template>
-            <template #details>The website displays coding schools that are located within the Greater Houston
-              Area.</template>
-            <template #stack>Solid JS, Typescript, Tailwind CSS, Pocketbase Database, Tanstack Table</template>
-          </Card>
-
-          <Card url_git="https://github.com/ebrahim95/coding_school_list" url_demo="https://small-hill-6640.fly.dev/">
+          <Card url_git="https://github.com/ebrahim95/practice-projects/tree/main/phonebook">
             <template #heading> Phonebook Application </template>
             <template #details>
               A simple application that functions a phonebook list, to you may remember your phone
@@ -107,6 +90,35 @@ const other_message: other = reactive({
 
 
         </div>
+      </section>
+      <section>
+        <h3 class="kbd font-bold">
+          HOW I STARTED
+        </h3>
+        <p>
+          I started web development in May 2022 by volunteering at an organization to develop a new
+          website. At first, I knew little about creating a website. I used a landing page software
+          called Carrd to develop the website. It was quite a simple software and creating a web
+          page was not too difficult.
+        </p>
+
+        <h3 class="kbd  font-bold">
+          PROGESSION
+        </h3>
+        <p>
+          I started to look deeper into web development and stumbled upon Webflow. I looked into and
+          started learning it through Webflow university. After developing a basic skillset, I
+          started to develop free websites for individuals in my discord community.
+        </p>
+        <h3 class="kbd  font-bold">
+          CURRENTLY,
+        </h3>
+
+        <p>
+          I have a proficient over React.js, Svelte.js, Node.js, and Express.js. I'm also quite comfortable working
+          with Typescript and creating stylish designs using Tailwind CSS. Lately, I've been diving into the world of
+          Elixir. My main goal is to become a skilled Full-Stack Developer with a keen eye for Front-End development.
+        </p>
       </section>
 
       <section>
