@@ -46,7 +46,7 @@ const other_message: other = reactive({
             url_demo="https://silent-dream-6984.fly.dev/">
             <template #heading> Country Information Application </template>
             <template #details>
-              A application to find information about your country + including the weather of the
+              A application to find information about your country + the weather of your
               capital city
             </template>
             <template #stack> Restful API, React, Node </template>
@@ -65,8 +65,7 @@ const other_message: other = reactive({
           <Card url_git="https://github.com/ebrahim95/practice-projects/tree/main/phonebook">
             <template #heading> Phonebook Application </template>
             <template #details>
-              A simple application that functions a phonebook list, to you may remember your phone
-              number
+              A application that creates a phonebook list to store your phone numbers.
             </template>
             <template #stack>Node.js, React, MongoDB</template>
           </Card>
@@ -75,7 +74,7 @@ const other_message: other = reactive({
           <Card url_git="https://github.com/ebrahim95/practice-projects/tree/main/patientor">
             <template #heading> Patient Diagnosis Application </template>
             <template #details>
-              Store your patient records in this application including the type of Diagnosis
+              Store your patient records in this application including the type of Diagnosis.
             </template>
             <template #stack> React, Typescript, Material UI </template>
           </Card>
@@ -108,16 +107,17 @@ const other_message: other = reactive({
         <p>
           I started to look deeper into web development and stumbled upon Webflow. I looked into and
           started learning it through Webflow university. After developing a basic skillset, I
-          started to develop free websites for individuals in my discord community.
+          started to develop free websites for individuals in my discord community. From then on, I started to
+          dive deeper into the world of website development.
         </p>
         <h3 class="kbd  font-bold">
           CURRENTLY,
         </h3>
 
         <p>
-          I have a proficient over React.js, Svelte.js, Node.js, and Express.js. I'm also quite comfortable working
-          with Typescript and creating stylish designs using Tailwind CSS. Lately, I've been diving into the world of
-          Elixir. My main goal is to become a skilled Full-Stack Developer with a keen eye for Front-End development.
+          Currently, I'm proficient in React.js, Svelte.js, Node.js, and Express.js. I'm also quite comfortable working
+          with Typescript and creating designs using Tailwind CSS. Lately, I've been diving into the world of
+          GOLang. My main goal is to become a Full-Stack Developer with a keen eye for Front-End development.
         </p>
       </section>
 
