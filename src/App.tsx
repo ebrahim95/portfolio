@@ -1,27 +1,24 @@
-import { useState } from 'react'
 import './App.css'
-import Galaxy from './Galaxy/three.tsx'
+import Navbar from './components/Navbar.tsx';
+import './components/Particles'
+import ParticlesBackground from './components/Particles.tsx';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1>My Portfolio</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+    <div>
+      <ParticlesBackground />
+      <div className="mx-auto border-2 p-1 w-9/12">
+        <Navbar />
+        <h1>My Portfolio</h1>
+        <div className="card">
+          <p>
+            Edit <code>src/App.tsx</code> and save to test HMR
+          </p>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      <Galaxy />
-    </>
-  )
+    </div>
+  );
+
 }
 
 export default App
