@@ -2,19 +2,17 @@ import './App.css'
 import Navbar from './components/Navbar.tsx';
 import './components/Particles'
 import ParticlesBackground from './components/Particles.tsx';
-
+import AboutMe from './pages/AboutMe.tsx';
 function App() {
   return (
-    <div>
+    <div className='font-sans'>
       <ParticlesBackground />
-      <div className="mx-auto border-4 p-1 w-9/12">
-        <Navbar />
-        <h1 className="">My Portfolio</h1>
-        <div className="card">
-          <p>
-            Edit <code>src/App.tsx</code> and save to test HMR
-          </p>
+      <div className="w-dvw h-dvh">
+        <div className='fixed -mt-2  border-black p-3 border-4 grid grid-cols-2 bg-white w-full'>
+          <h1 className="text-black roboto-slab">Ebrahim | FullStack Engineer</h1>
+          <Navbar />
         </div>
+        <AboutMe />
       </div>
     </div>
   );
