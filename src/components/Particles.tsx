@@ -70,7 +70,7 @@ function ParticlesBackground() {
         }
       },
       color: {
-        value: "#fff",
+        value: "#000",
         animation: {
           enable: false,
           speed: 20,
@@ -163,7 +163,7 @@ function ParticlesBackground() {
     },
     detectRetina: true,
     background: {
-      color: "#000000",
+      color: "#ffffff",
       image: "",
       position: "50% 50%",
       repeat: "no-repeat",
