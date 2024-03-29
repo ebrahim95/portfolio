@@ -5,8 +5,8 @@ export default function Story() {
       <div className="bg-indigo-500/75 border-black border-4 w-4/12 h-5/12 mx-auto mb-2 p-4">
         <h1 className="text-black">My Story</h1>
       </div>
-      <div className="bg-indigo-500/50 text-black w-4/12 mx-auto border-solid border-4 border-black p-4">
-        <div className="m-2">
+      <div className="bg-indigo-500/50 text-black w-4/12 mx-auto border-solid border-4 border-black">
+        <div className="p-2 border-b-4 border-black">
           <h2 className="roboto-slab">
             HOW I STARTED
           </h2>
@@ -17,7 +17,7 @@ export default function Story() {
             It was quite a simple software and creating a web page was not too difficult.
           </p>
         </div>
-        <div className="m-2">
+        <div className="p-2 border-b-4 border-black">
           <h2 className="roboto-slab">
             PROGESSION
           </h2>
@@ -28,7 +28,7 @@ export default function Story() {
             I started to develop free websites for individuals in my discord community.
             From then on, I started to dive deeper into the world of website development.         </p>
         </div>
-        <div className="m-2">
+        <div className="p-2">
           <h2 className="roboto-slab">
             CURRENTLY,
           </h2>
