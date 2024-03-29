@@ -6,7 +6,7 @@ const button = "ring-2 ring-black ring-offset-2 ring-offset-white bg-black text-
 function Navbar() {
 
   return (
-    <nav className="flex justify-evenly w-5/12 h-16">
+    <nav className="flex justify-evenly w-6/12 h-16">
       <button className={`${button}`}>Home</button>
       <button className={`${button}`}>About Me :)</button>
       <button className={`${button}`}>Projects</button>
