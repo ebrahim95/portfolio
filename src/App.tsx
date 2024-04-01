@@ -29,8 +29,8 @@ function App() {
   return (
     <main className='font-sans'>
       <ParticlesBackground />
-      <div id="layout" className="w-dvw h-dvh pt-32">
-        <header className='fixed top-0 border-black p-3 border-4 grid grid-cols-2 bg-indigo-300 w-full'>
+      <div id="layout" className="w-dvw pt-40">
+        <header className='fixed bg-indigo-300 border-black p-3 border-4 top-0 grid grid-cols-2 place-items-center w-full'>
           <h1 className="text-black roboto-slab">Ebrahim | FullStack Engineer</h1>
           <Navbar />
         </header>
