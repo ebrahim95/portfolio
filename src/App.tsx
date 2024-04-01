@@ -5,7 +5,8 @@ import ParticlesBackground from './components/Particles.tsx';
 import ProjectCard from './components/ProjectCard.tsx';
 import Story from './pages/Story.tsx';
 //TODO need to add a small aboutme, add project cards, and values
-const text_style = "ring-2 ring-black ring-offset-2 ring-offset-white bg-black text-white rounded-sm mr-3 mb-3 p-1 "
+
+
 const text_for_project_card = [{
   heading: "Tailwind CSS Generator",
   detail: "A Tailwind CSS component generator that helps you prototype quickly.",
@@ -25,6 +26,11 @@ const text_for_project_card = [{
   git_link: "www.gooogog.com",
   demo_link: "www.pop.com"
 }]
+
+
+
+
+const text_style = "ring-2 ring-black ring-offset-2 ring-offset-white bg-black text-white rounded-sm mr-3 mb-3 py-1 px-3"
 function App() {
   return (
     <main className='font-sans'>
@@ -34,12 +40,16 @@ function App() {
           <h1 className="text-black roboto-slab">Ebrahim | FullStack Engineer</h1>
           <Navbar />
         </header>
-        <section id="profile" className="grid grid-cols-2 grid-rows-2 bg-indigo-500/50 border-black border-4 w-4/12 h-5/12 mx-auto mb-2 p-4">
-          <h1 className="text-black">About Me :)</h1>
-          <figure>
-          </figure>
+        <section id="profile" className="grid grid-rows-2 w-5/12 mx-auto mb-2 bg-white/50">
+          <div className="mb-2">
+            <h1 className="text-black roboto-slab">Hello!,</h1>
+            <p className="text-black text-2xl">I am Ebrahim, a Fullstack engineer who enjoys building and learning new things.</p>
+          </div>
+          {/* <figure> */}
+          {/*   <img src="" className="border-black border-4 bg-indigo-500/50 w-full h-5/6 mb-2 p-2" /> */}
+          {/* </figure> */}
 
-          <div id="skills" className="flex flex-wrap items-start justify-start w-full col-span-2">
+          <div id="skills" className="flex flex-wrap items-start content-start w-12/12">
             <text className={`${text_style}`}>CSS</text>
             <text className={`${text_style}`}>HTML</text>
             <text className={`${text_style}`}>NextJS</text>
@@ -51,6 +61,7 @@ function App() {
             <text className={`${text_style}`}>Express</text>
             <text className={`${text_style}`}>MongoDB</text>
             <text className={`${text_style}`}>RestAPI</text>
+            <text className={`${text_style}`}>Git</text>
           </div>
         </section>
         <section className="w-5/12 mx-auto mb-2">
