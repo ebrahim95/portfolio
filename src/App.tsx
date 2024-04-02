@@ -11,22 +11,27 @@ const text_for_project_card = [{
   heading: "Tailwind CSS Generator",
   detail: "A Tailwind CSS component generator that helps you prototype quickly.",
   stack: ["Svelte", "Typescript", "Tailwind CSS"],
-  git_link: "www.gooogog.com",
-  demo_link: "www.pop.com"
+  git_link: "https://github.com/ebrahim95/tailwindcss_generator",
+  demo_link: "https://ebrahim95.github.io/tailwindcss_generator/"
 }, {
   heading: "Bloglist Application ",
   detail: "A application to store you favorite blogs posts where other users can like and comment on the blog post.",
   stack: ["React", "Node.JS", "Redux"],
-  git_link: "www.gooogog.com",
-  demo_link: "www.pop.com"
+  git_link: "https://github.com/ebrahim95/practice-projects/tree/main/bloglist",
+  demo_link: ""
 }, {
   heading: "Gmail AI Summarizer",
   detail: "Takes all your emails and summarizes into a summary.",
   stack: ["Python", "Gemini", "RAG"],
-  git_link: "www.gooogog.com",
-  demo_link: "www.pop.com"
+  git_link: "https://github.com/ebrahim95/ai_email_organizer",
+  demo_link: ""
+}, {
+  heading: "Auction Website",
+  detail: "Be able to bet on an auction",
+  stack: ["NextJS", "PlanetScale", "OAuth", "Tailwind"],
+  git_link: "https://github.com/chingu-voyages/v45-tier3-team-46",
+  demo_link: "https://v45-tier3-team-46-lbe8sys3f-trio-coders.vercel.app/"
 }]
-
 
 const skills_tags: string[] = ["CSS", "HTML", "NextJS", "React", "JavaScript", "Typescript", "Python", "Node", "Express", "MongoDB", "RestAPI", "Git"]
 
