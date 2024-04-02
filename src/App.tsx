@@ -28,6 +28,7 @@ const text_for_project_card = [{
 }]
 
 
+const skills_tags: string[] = ["CSS", "HTML", "NextJS", "React", "JavaScript", "Typescript", "Python", "Node", "Express", "MongoDB", "RestAPI", "Git"]
 
 
 const text_style = "ring-2 ring-black ring-offset-2 ring-offset-white bg-black text-white rounded-sm mr-3 mb-3 py-1 px-3"
@@ -50,18 +51,7 @@ function App() {
           {/* </figure> */}
 
           <div id="skills" className="flex flex-wrap items-start content-start w-12/12">
-            <text className={`${text_style}`}>CSS</text>
-            <text className={`${text_style}`}>HTML</text>
-            <text className={`${text_style}`}>NextJS</text>
-            <text className={`${text_style}`}>React</text>
-            <text className={`${text_style}`}>JavaScript</text>
-            <text className={`${text_style}`}>Typescript</text>
-            <text className={`${text_style}`}>Python</text>
-            <text className={`${text_style}`}>Node</text>
-            <text className={`${text_style}`}>Express</text>
-            <text className={`${text_style}`}>MongoDB</text>
-            <text className={`${text_style}`}>RestAPI</text>
-            <text className={`${text_style}`}>Git</text>
+            {skills_tags.map(skill => <text className={`${text_style}`}>{skill}</text>)}
           </div>
         </section>
         <section className="w-5/12 mx-auto mb-2">
