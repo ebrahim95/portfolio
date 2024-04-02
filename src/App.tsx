@@ -37,7 +37,7 @@ function App() {
     <main className='font-sans'>
       <ParticlesBackground />
       <div id="layout" className="w-dvw pt-40">
-        <header className='fixed bg-indigo-300 border-black p-3 border-4 top-0 grid grid-cols-2 place-items-center w-full'>
+        <header className="fixed bg-indigo-300 border-black p-3 border-4 top-0 grid grid-cols-2 justify-start items-center w-full">
           <h1 className="text-black roboto-slab">Ebrahim | FullStack Engineer</h1>
           <Navbar />
         </header>
