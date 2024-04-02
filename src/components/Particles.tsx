@@ -63,7 +63,7 @@ function ParticlesBackground() {
         }
       },
       number: {
-        value: 200,
+        value: 140,
         density: {
           enable: false,
           value_area: 800
