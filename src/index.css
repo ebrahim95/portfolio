@@ -35,6 +35,10 @@
   p {
     @apply text-xl;
   }
+
+  button {
+    @apply ring-2 ring-black ring-offset-2 ring-offset-white bg-black text-white rounded-sm px-2 py-1;
+  }
 }
 
 a:hover {
