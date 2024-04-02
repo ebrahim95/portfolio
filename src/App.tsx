@@ -72,6 +72,12 @@ function App() {
           })}
         </section>
         <Story />
+        <footer className="fixed bg-indigo-300 border-black p-3 border-4 flex justify-center items-center w-full bottom-0">
+          <button>Github</button>
+          <h1 className='text-black'>|</h1>
+          <button>LinkedIn</button>
+
+        </footer>
       </div >
     </main >
   );
