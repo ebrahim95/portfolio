@@ -19,7 +19,7 @@ export default function ProjectCard({ heading, detail, stack, git_link, demo_lin
           {stack?.map(s => <text className={`${text_style}`}>{s}</text>)}
         </div>
       </div>
-      <div id="links" className="flex flex-col justify-center items-center">
+      <div id="links" className="flex flex-col gap-1 justify-center items-center">
         {git_link === "" ? "" : <button className={`${button_style}`}><a href={`${git_link}`}>Github</a></button>}
         {demo_link === "" ? "" : <button className={`${button_style}`}> <a href={`${demo_link}`}>Demo</a></button>}
       </div>
