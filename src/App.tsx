@@ -4,8 +4,10 @@ import './components/Particles'
 import ParticlesBackground from './components/Particles.tsx';
 import ProjectCard from './components/ProjectCard.tsx';
 import Story from './pages/Story.tsx';
-//TODO need to add a small aboutme, add project cards, and values
 
+//TODO add icons to footer  and links
+//TODO add values sections
+//TODO style the story more
 
 const text_for_project_card = [{
   heading: "Tailwind CSS Generator",
@@ -41,32 +43,35 @@ function App() {
   return (
     <main className='font-sans'>
       <ParticlesBackground />
-      <div id="layout" className="w-dvw pt-40">
-        <header className="fixed bg-indigo-300 border-black p-3 border-4 top-0 grid grid-cols-2 justify-start items-center w-full">
-          <h1 className="text-black roboto-slab">Ebrahim | FullStack Engineer</h1>
+      <div id="layout" className="w-dv pt-44 xl:pt-40 pb-40">
+        <header className="fixed bg-indigo-300 border-black xl:p-3 border-4 top-0 grid grid-rows-2 xl:grid-rows-1 xl:grid-cols-3 justify-center xl:justify-start items-center w-full">
+          <h1 className="text-black roboto-slab xl:col-span-2">Ebrahim | FullStack Engineer</h1>
           <Navbar />
         </header>
-        <section id="profile" className="grid grid-rows-2 w-5/12 mx-auto mb-2 bg-white/50">
-          <div className="mb-2">
-            <h1 className="text-black roboto-slab">Hello!,</h1>
-            <p className="text-black text-2xl">I am Ebrahim, a Fullstack engineer who enjoys building and learning new things.</p>
-          </div>
-          {/* <figure> */}
-          {/*   <img src="" className="border-black border-4 bg-indigo-500/50 w-full h-5/6 mb-2 p-2" /> */}
-          {/* </figure> */}
+        <div id="container" className="xl:w-5/12 md:w-7/12 w-8/12 mx-auto">
+          <section id="profile" className="grid grid-rows-2 mx-auto mb-2 bg-white/50">
+            <div className="mb-2">
+              <h1 className="text-black roboto-slab">Hello!,</h1>
+              <h2 className="text-black">I am Ebrahim, a Fullstack engineer who enjoys building and learning new things.</h2>
+            </div>
+            {/* <figure> */}
+            {/*   <img src="" className="border-black border-4 bg-indigo-500/50 w-full h-5/6 mb-2 p-2" /> */}
+            {/* </figure> */}
 
-          <div id="skills" className="flex flex-wrap items-start content-start w-12/12">
-            {skills_tags.map(skill => <text className={`${text_style}`}>{skill}</text>)}
-          </div>
-        </section>
-        <section className="w-5/12 mx-auto mb-2">
-          <h1 className="text-black roboto-slab">Projects</h1>
-          {text_for_project_card.map(({ heading, detail, stack, git_link, demo_link }) => {
-            return (
-              <ProjectCard heading={heading} detail={detail} stack={stack} git_link={git_link} demo_link={demo_link} />)
-          })}
-        </section>
-        <Story />
+            <div id="skills" className="flex flex-wrap items-start content-start w-12/12">
+              {skills_tags.map(skill => <text className={`${text_style}`}>{skill}</text>)}
+            </div>
+          </section>
+          <section className="mb-2">
+            <h1 className="text-black roboto-slab">Projects</h1>
+            {text_for_project_card.map(({ heading, detail, stack, git_link, demo_link }) => {
+              return (
+                <ProjectCard heading={heading} detail={detail} stack={stack} git_link={git_link} demo_link={demo_link} />)
+            })}
+          </section>
+          <Story />
+        </div>
+
         <footer className="fixed bg-indigo-300 border-black p-3 border-4 flex gap-2 justify-center items-center w-full bottom-0">
           <button><a href="">Github</a></button>
           <h1 className='text-black'>|</h1>
