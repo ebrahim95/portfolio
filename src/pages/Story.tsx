@@ -1,7 +1,7 @@
 
 export default function Story() {
   return (
-    <section id="story" className="bg-white/75 w-5/12 h-5/12 mt-10 mx-auto">
+    <section id="story" className="bg-white/75 h-5/12 mt-10 mx-auto">
       <div className="mb-2">
         <h1 className="text-black roboto-slab">Story</h1>
       </div>
