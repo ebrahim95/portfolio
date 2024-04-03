@@ -20,14 +20,14 @@ const text_for_project_card = [{
   git_link: "https://github.com/ebrahim95/practice-projects/tree/main/bloglist",
   demo_link: ""
 }, {
-  heading: "Gmail AI Summarizer",
+  heading: "Gmail AI Summarizer | WIP",
   detail: "Takes all your emails and summarizes into a summary.",
   stack: ["Python", "Gemini", "RAG"],
   git_link: "https://github.com/ebrahim95/ai_email_organizer",
   demo_link: ""
 }, {
   heading: "Auction Website",
-  detail: "Be able to bet on an auction",
+  detail: "A website that enables you to aunction items.",
   stack: ["NextJS", "PlanetScale", "OAuth", "Tailwind"],
   git_link: "https://github.com/chingu-voyages/v45-tier3-team-46",
   demo_link: "https://v45-tier3-team-46-lbe8sys3f-trio-coders.vercel.app/"
