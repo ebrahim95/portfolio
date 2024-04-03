@@ -7,7 +7,7 @@ interface props {
 }
 
 const text_style = "ring-2 ring-black ring-offset-2 ring-offset-white bg-black text-white rounded-sm mr-3 mb-3 py-1 px-3"
-const button_style = "border-4 border-black rounded-md px-2 my-1 py-1 w-7/12"
+const button_style = "my-1"
 export default function ProjectCard({ heading, detail, stack, git_link, demo_link }: props) {
   //TODO Card
   return (
