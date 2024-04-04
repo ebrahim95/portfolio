@@ -62,12 +62,14 @@ function App() {
               {skills_tags.map(skill => <text className={`${text_style}`}>{skill}</text>)}
             </div>
           </section>
-          <section className="mb-2">
-            <h1 className="text-black roboto-slab">Projects</h1>
-            {text_for_project_card.map(({ heading, detail, stack, git_link, demo_link }) => {
-              return (
-                <ProjectCard heading={heading} detail={detail} stack={stack} git_link={git_link} demo_link={demo_link} />)
-            })}
+          <section className="mb-2 ">
+            <h1 className="text-black roboto-slab ">Projects</h1>
+            <div className="grid grid-cols-2 gap-4">
+              {text_for_project_card.map(({ heading, detail, stack, git_link, demo_link }) => {
+                return (
+                  <ProjectCard heading={heading} detail={detail} stack={stack} git_link={git_link} demo_link={demo_link} />)
+              })}
+            </div>
           </section>
           <Story />
         </div>
