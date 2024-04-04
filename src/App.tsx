@@ -23,7 +23,7 @@ const text_for_project_card = [{
   demo_link: ""
 }, {
   heading: "Gmail AI Summarizer | WIP",
-  detail: "Takes all your emails and summarizes into a summary.",
+  detail: "Takes all your emails and summarizes them into a summary.",
   stack: ["Python", "Gemini", "RAG"],
   git_link: "https://github.com/ebrahim95/ai_email_organizer",
   demo_link: ""
