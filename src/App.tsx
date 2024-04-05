@@ -1,5 +1,5 @@
 import './App.css'
-import Navbar from './components/Navbar.tsx';
+// import Header from './components/Header.tsx';
 import './components/Particles'
 import ParticlesBackground from './components/Particles.tsx';
 import ProjectCard from './components/ProjectCard.tsx';
@@ -43,11 +43,6 @@ function App() {
   return (
     <main className='font-sans'>
       <ParticlesBackground />
-      <div id="layout" className="w-dv pt-44 xl:pt-40 pb-40">
-        <header className="fixed bg-indigo-300 border-black xl:p-3 border-4 top-0 grid grid-rows-2 xl:grid-rows-1 xl:grid-cols-3 justify-center xl:justify-start items-center w-full">
-          <h1 className="text-black roboto-slab xl:col-span-2">Ebrahim | FullStack Engineer</h1>
-          <Navbar />
-        </header>
         <div id="container" className="xl:w-5/12 md:w-7/12 w-8/12 mx-auto">
           <section id="profile" className="grid grid-rows-2 mx-auto mb-2 bg-white/50">
             <div className="mb-2">
@@ -72,14 +67,7 @@ function App() {
           <Story />
         </div>
 
-        <footer className="fixed bg-indigo-300 border-black p-3 border-4 flex gap-2 justify-center items-center w-full bottom-0">
-          <button><a href="https://github.com/ebrahim95">Github</a></button>
-          <h1 className="text-black">|</h1>
-          <button><a href="https://www.linkedin.com/in/ebrahim-haji/">LinkedIn</a></button>
-          <h1 className='text-black'>|</h1>
-          <button><a href="https://twitter.com/ebstheace">Twitter</a></button>
 
-        </footer>
       </div >
     </main >
   );
