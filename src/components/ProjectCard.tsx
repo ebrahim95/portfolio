@@ -6,17 +6,16 @@ interface props {
   demo_link?: string
 }
 
-const text_style = "ring-2 ring-black ring-offset-2 ring-offset-white bg-black text-white rounded-sm mr-3 mb-3 py-1 px-3"
-const button_style = "my-1"
+const button_style = "my-1 xl:w-5/12"
 export default function ProjectCard({ heading, detail, stack, git_link, demo_link }: props) {
   //TODO Card
   return (
     <div id="project_card" className="text-black mx-auto my-4 w-full border-4 border-black bg-white/75 grid xl:grid-cols-4">
-      <div id="info" className="p-3 border-b-2 xl:border-r-2 xl:border-b-0 border-black row-span-3 xl:col-span-3 xl:row-span-1 flex flex-col gap-2 items-start">
+      <div id="info" className="bg-indigo-200 p-3 border-b-2 xl:border-r-2 xl:border-b-0 border-black row-span-3 xl:col-span-3 xl:row-span-1 flex flex-col gap-2 items-start">
         <h2>{heading}</h2>
         <p>{detail}</p>
         <div className="flex flex-wrap">
-          {stack?.map(s => <text className={`${text_style}`}>{s}</text>)}
+          {stack?.map(s => <text className="text_style">{s}</text>)}
         </div>
       </div>
       <div id="links" className="flex xl:flex-col gap-4 xl:gap-1 xl:justify-center xl:items-center items-start p-3">
