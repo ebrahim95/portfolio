@@ -8,6 +8,7 @@ import Story from './pages/Story.tsx';
 //TODO add icons to footer  and links
 //TODO add values sections
 //TODO style the story more
+//TODO <a href="https://www.flaticon.com/free-icons/bird" title="bird icons">Bird icons created by Freepik - Flaticon</a>
 
 const text_for_project_card = [{
   heading: "Tailwind CSS Generator",
@@ -38,24 +39,36 @@ const text_for_project_card = [{
 const skills_tags: string[] = ["CSS", "HTML", "NextJS", "React", "JavaScript", "Typescript", "Python", "Node", "Express", "MongoDB", "RestAPI", "Git"]
 
 
-const text_style = "ring-2 ring-black ring-offset-2 ring-offset-white bg-black text-white rounded-sm mr-3 mb-3 py-1 px-3"
 function App() {
   return (
     <main className='font-sans'>
       <ParticlesBackground />
+      <div id="layout" className="w-dvw pt-20 pb-40">
         <div id="container" className="xl:w-5/12 md:w-7/12 w-8/12 mx-auto">
-          <section id="profile" className="grid grid-rows-2 mx-auto mb-2 bg-white/50">
-            <div className="mb-2">
-              <h1 className="text-black roboto-slab">Hello!,</h1>
-              <h2 className="text-black">I am Ebrahim, a Fullstack engineer who enjoys building and learning new things.</h2>
+          <section id="profile" className="flex flex-col gap-5 items-start mx-auto mb-2 bg-white/50">
+            <div>
+              <h1 className="roboto-slab">Hello!,</h1>
+              <h2>I am Ebrahim, a Fullstack engineer who enjoys building and learning new things.</h2>
             </div>
             {/* <figure> */}
             {/*   <img src="" className="border-black border-4 bg-indigo-500/50 w-full h-5/6 mb-2 p-2" /> */}
             {/* </figure> */}
 
-            <div id="skills" className="flex flex-wrap items-start content-start w-12/12">
-              {skills_tags.map(skill => <text className={`${text_style}`}>{skill}</text>)}
+            <div id="social-media">
+              <h2 className="roboto-slab mb-1">Social Media</h2>
+              <div className="flex content-start items-center gap-3">
+                <button><a href="https://github.com/ebrahim95">Github</a></button>
+                <button><a href="https://www.linkedin.com/in/ebrahim-haji/">LinkedIn</a></button>
+                <button><a href="https://twitter.com/ebstheace">Twitter</a></button>
+              </div>
             </div>
+            <div >
+              <h2 className="roboto-slab mb-1">Skills</h2>
+              <div id="skills" className="flex flex-wrap items-start content-start w-12/12">
+                {skills_tags.map(skill => <text className="text_style">{skill}</text>)}
+              </div>
+            </div>
+
           </section>
           <section className="mb-2">
             <h1 className="text-black roboto-slab">Projects</h1>
@@ -65,8 +78,8 @@ function App() {
             })}
           </section>
           <Story />
-        </div>
 
+        </div>
 
       </div >
     </main >
