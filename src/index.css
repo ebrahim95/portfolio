@@ -27,29 +27,31 @@
 
 @layer base {
   h1 {
-    @apply text-3xl;
+    @apply text-3xl text-black;
   }
   h2 {
-    @apply text-xl;
+    @apply text-xl text-black;
   }
   p {
-    @apply text-lg;
+    @apply text-lg text-black;
   }
 
   button {
-    @apply ring-2 ring-black ring-offset-2 ring-offset-white bg-black text-white rounded-md px-2 py-1;
+    @apply ring-2 ring-indigo-300 ring-offset-2 ring-offset-white bg-indigo-500 text-white rounded-md px-2 py-1;
   }
 
-
+  .text_style {
+    @apply ring-2 ring-indigo-400 ring-offset-2 ring-offset-white bg-indigo-900 text-white rounded-md mr-3 mb-3 py-1 px-2
+  }
   @screen lg {
     h1 {
-        @apply text-5xl;
+        @apply text-5xl text-black;
     }
     h2 {
-        @apply text-3xl;
+        @apply text-3xl text-black;
     }
     p {
-        @apply text-xl;
+        @apply text-xl text-black;
     }
   }
 }
