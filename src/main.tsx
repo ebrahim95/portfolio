@@ -4,11 +4,11 @@ import App from './App.tsx'
 import './index.css'
 
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider
 } from "react-router-dom";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />
